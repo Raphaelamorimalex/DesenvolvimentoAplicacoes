@@ -11,8 +11,8 @@ class NotesDataBaseHelper(context: Context):SQLiteOpenHelper(context,"databaseNo
                     "$_ID INTEGER NOT NULL PRIMARY KEY" +
                     "$TITLE_NOTES TEXT NOT NULL"+
                     "$DESCRIPTION_NOTE TEXT NOT NULL"
-
                 )
+
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
